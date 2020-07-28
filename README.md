@@ -22,8 +22,10 @@ Para utilizar a API é necessário instalar os softwares:
 
 ```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get add nodejs yarn
+
+sudo echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt-get install nodejs yarn -y
 ```
 
 ### Instalando
@@ -42,14 +44,6 @@ Para iniciar o servidor em modo de desenvolvimento execute o seguinte comando:
 
 ```
 yarn dev
-```
-
-### Ferramenta de população do banco de dados
-
-Para importar os dados iniciais do banco de dados em CSV, existe uma CLI interativa que faz o processo, para abri-lá digite o seguinte comando:
-
-```
-yarn populate
 ```
 
 ## Deploy <a name = "deploy"></a>
