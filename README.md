@@ -44,14 +44,6 @@ Para iniciar o servidor em modo de desenvolvimento execute o seguinte comando:
 yarn dev
 ```
 
-### Ferramenta de população do banco de dados
-
-Para importar os dados iniciais do banco de dados em CSV, existe uma CLI interativa que faz o processo, para abri-lá digite o seguinte comando:
-
-```
-yarn populate
-```
-
 ## Deploy <a name = "deploy"></a>
 
 O deploy será feito pelo CI/CD do GitHub.
