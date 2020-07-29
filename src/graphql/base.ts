@@ -14,7 +14,5 @@ export const typeDefs = gql`
 `;
 
 export const resolvers = {
-  resolvers: {
-    Upload: GraphQLUpload,
-  },
+  Upload: GraphQLUpload,
 };
